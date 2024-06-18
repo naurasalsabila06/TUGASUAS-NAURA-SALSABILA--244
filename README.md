@@ -8,79 +8,33 @@ Histogram of gaji menunjukan grafik gaji dan juga frequency
 Box plot of usia menunjukan rentangnya usia
 Barplot jenis kelamin menunjukan perbedaan pria dan perempuan
 
-INTERPRETASI 
-Lima Baris Pertama Data:
-Menampilkan lima baris pertama data untuk mendapatkan gambaran umum tentang isi data:
-yaml
-Copy code
-   usia   gaji jenis_kelamin
-0    25  5000         pria
-1    30  6000       wanita
-2    22  4500         pria
-3    28  7000       wanita
-4    35  8000         pria
-Informasi Umum Tentang Data:
-Memberikan informasi umum seperti jumlah entri, kolom, tipe data, dan jumlah nilai yang tidak kosong:
-kotlin
-Copy code
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 20 entries, 0 to 19
-Data columns (total 3 columns):
- #   Column        Non-Null Count  Dtype
----  ------        --------------  -----
- 0   usia          20 non-null     int64
- 1   gaji          20 non-null     int64
- 2   jenis_kelamin 20 non-null     object
-dtypes: int64(2), object(1)
-memory usage: 608.0+ bytes
-•	Jumlah entri: 20
-•	Kolom: 3 (usia, gaji, jenis_kelamin)
-•	Tidak ada nilai yang hilang dalam data.
-Ringkasan Statistik Tentang Data:
-Menyajikan statistik deskriptif untuk kolom numerik (usia dan gaji):
-yaml
-Copy code
-            usia         gaji
-count  20.000000    20.000000
-mean   30.500000  6810.000000
-std     6.020797  1616.833734
-min    22.000000  4500.000000
-25%    25.250000  5750.000000
-50%    30.000000  6800.000000
-75%    36.750000  8000.000000
-max    41.000000  9500.000000
-•	Usia rata-rata: 30.5 tahun
-•	Gaji rata-rata: 6810
-•	Usia minimum: 22 tahun
-•	Usia maksimum: 41 tahun
-•	Gaji minimum: 4500
-•	Gaji maksimum: 9500
-Jumlah Data yang Hilang dalam Setiap Kolom:
-Semua kolom tidak memiliki data yang hilang:
-go
-Copy code
-usia            0
-gaji            0
-jenis_kelamin   0
-dtype: int64
-Jumlah Nilai Unik dalam Setiap Kolom:
-Jumlah nilai unik dalam setiap kolom:
-go
-Copy code
-usia            20
-gaji            20
-jenis_kelamin    2
-dtype: int64
-•	usia dan gaji masing-masing memiliki 20 nilai unik.
-•	jenis_kelamin memiliki 2 nilai unik (pria dan wanita).
-Tipe Data dari Setiap Kolom:
-Menampilkan tipe data dari setiap kolom:
-vbnet
-Copy code
-usia             int64
-gaji             int64
-jenis_kelamin   object
-dtype: object
+Analisis:
+
+Scatter Plot: Usia vs. Gaji
+Pengamatan:
+•	Scatter plot menunjukkan hubungan positif antara usia dan gaji. Titik-titik data menunjukkan bahwa semakin tinggi usia, semakin tinggi gaji yang diterima.
+•	Ada pola kenaikan yang cukup konsisten, yang menunjukkan bahwa gaji meningkat seiring bertambahnya usia.
+
+Histogram: Distribusi Gaji
+Pengamatan:
+•	Histogram menunjukkan distribusi gaji dalam data.
+•	Gaji bervariasi dari 4500 hingga 9500.
+•	Frekuensi distribusi gaji relatif merata dengan beberapa puncak di rentang gaji 5000, 7000, dan 9000.
+
+Box Plot: Usia
+Pengamatan:
+•	Box plot menunjukkan distribusi usia dalam data.
+
+•	Median usia berada sekitar 30 tahun
+•	Rentang interkuartil (IQR) menunjukkan bahwa sebagian besar data usia berada antara 25 dan 37 tahun.
+•	Tidak ada outlier yang signifikan dalam data usia.
+
+Bar Plot: Jenis Kelamin
+Pengamatan:
+•	Bar plot menunjukkan distribusi jenis kelamin dalam data.
+•	Data dibagi secara merata antara pria dan wanita, dengan masing-masing kelompok memiliki jumlah yang hampir sama (sekitar 10).
+
+
 Visualisasi:
 1.	Scatter Plot: Usia vs. Gaji
 o	Memvisualisasikan hubungan antara usia dan gaji.
