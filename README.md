@@ -42,8 +42,24 @@ Pengamatan:
 	 •	Data dibagi secara merata antara pria dan wanita, dengan masing-masing kelompok memiliki jumlah yang hampir sama (sekitar 10).
 
 # Interpretasi: 
+Informasi Umum Tentang Data:
+Memberikan informasi umum seperti jumlah entri, kolom, tipe data, dan jumlah nilai yang tidak kosong: 
+ 	•	Jumlah entri: 20
+	 •	Kolom: 3 (usia, gaji, jenis_kelamin)
+	 •	Tidak ada nilai yang hilang dalam data
+ 
+Ringkasan Statistik Tentang Data:
 
-
+	•	Usia rata-rata: 30.5 tahun
+	•	Gaji rata-rata: 6810
+	•	Usia minimum: 22 tahun
+	•	Usia maksimum: 41 tahun
+	•	Gaji minimum: 4500
+	•	Gaji maksimum: 9500
+ 
+Jumlah Nilai Unik dalam Setiap Kolom:
+	•	usia dan gaji masing-masing memiliki 20 nilai unik.
+	•	jenis_kelamin memiliki 2 nilai unik (pria dan wanita).
 
 # Visualisasi:
 1.	Scatter Plot: Usia vs. Gaji
